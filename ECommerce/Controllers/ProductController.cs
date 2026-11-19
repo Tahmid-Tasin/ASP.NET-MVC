@@ -8,5 +8,10 @@ namespace ECommerce.Controllers
         {
             return View();
         }
+
+        public IActionResult Admin()
+        {
+            return View();
+        }
     }
 }

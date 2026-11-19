@@ -8,6 +8,14 @@ html {
   }
 }
 
+
+#banner-body {
+    padding-top: 80px;
+}
+#table-body{
+    padding-top:80px;
+}
+
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
@@ -42,4 +50,14 @@ body {
 
 .customnavbar {
     background-color: #108981;
+}
+
+ .crd{
+     transition: transform 0.5s ease;
+ }
+
+.crd:hover{
+    border-color:blue;
+
+    transform: scale(1.04);
 }

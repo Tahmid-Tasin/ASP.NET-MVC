@@ -3,11 +3,93 @@
 *@
 @{
 }
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+
+
+    <link rel="stylesheet" href="~/css/site.css">
+<body id="banner-body">
+<div id="heroBannerCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+  <!-- Bottom Indicator Dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroBannerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#heroBannerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#heroBannerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <!-- Slide 1 (Active) -->
+    <div class="carousel-item active">
+      <img src="~/images/banner/five.png" class="d-block w-100" style="height: 520px; object-fit: cover;" alt="First slide">
+
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img src="~/images/banner/two.png" class="d-block w-100" style="height: 520px; object-fit: cover;" alt="Second slide">
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <img src="~/images/banner/four.png" class="d-block w-100" style="height: 520px; object-fit: cover;" alt="Third slide">
+    </div>
+  </div>
+
+  <!-- Previous / Next Arrows -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroBannerCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroBannerCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
+<br>
+
+<div class="container mt-4">
+    <div class="row g-4">
+
+        <!-- Product 1 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card crd">
+                <img class="card-img-top"
+                     src="~/images/product/Pringles.jpg"
+                     alt="Pringles">
+
+                <div class="card-body">
+                    <h5 class="card-title">Pringles Flame</h5>
+                    <p class="card-text">
+                        Pringles Flame Extra Hot Cheese & Chilli.
+                    </p>
+                    <a href="#" class="btn btn-primary w-100">
+                        Add to cart
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card crd">
+                <img class="card-img-top"
+                     src="~/images/product/cherry-blossom.png"
+                     alt="Cherry Blossom">
+
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Cherry Blossom Face Serum
+                    </h5>
+                    <p class="card-text">
+                        Give a dry, dull-looking skincare routine
+                       hydration boost. 🌸
+                    </p>
+                    <a href="#" class="btn btn-primary w-100">
+                        Add to cart
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
